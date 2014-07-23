@@ -1,0 +1,17 @@
+name: flare_example
+description: A site rendered using Flare.
+dev_dependencies:
+  flare:
+    path: /home/gmosx/Code/Packages/flare
+  sass: any
+transformers:
+- sass:
+    executable: /home/gmosx/Code/sassc
+- flare/metadata_transformer
+- flare/markdown_transformer
+- flare/posts_transformer:
+    root: web/articles
+    layout: web/articles/_layout.tmpl.html
+- flare/includes_transformer
+- flare/mustache_transformer
+- flare/cleanup_transformer

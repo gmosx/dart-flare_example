@@ -1,0 +1,7 @@
+$color: red;
+
+.outer {
+  .inner {
+    color: $color;
+  }
+}
