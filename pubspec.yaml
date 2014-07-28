@@ -4,14 +4,19 @@ dev_dependencies:
   flare:
     path: /home/gmosx/Code/Packages/flare
   sass: any
+dependency_overrides:
+  barback: 0.14.1+3
 transformers:
 - sass:
     executable: /home/gmosx/Code/sassc
-- flare/metadata_transformer
+- flare/metadata_extractor
 - flare/markdown_transformer
+- flare/posts_indexer:
+    root: web/posts
 - flare/posts_transformer:
-    root: web/articles
-    layout: web/articles/_layout.tmpl.html
-- flare/includes_transformer
+    root: web/posts
+    layout: web/_posts_layout.tmpl.html
+- flare/partials_transformer
+- flare/metadata_aggregator
 - flare/mustache_transformer
 - flare/cleanup_transformer

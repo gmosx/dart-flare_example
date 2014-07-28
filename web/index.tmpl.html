@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gmosx site</title>
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    {{> _header.inc.tmpl.html}}
+
+    <section>
+    {{#site.posts}}
+      <article><a href="{{path}}">{{title}}</a></article>
+    {{/site.posts}}
+    </section>
+
+    {{> _footer.inc.tmpl.html}}
+  </body>
+</html>
