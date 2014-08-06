@@ -8,14 +8,14 @@
     <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    {{> _header.inc.tmpl.html}}
+    {{> _header.inc.html}}
 
     <section>
-    {{#site.posts}}
+    {{#site.posts.all}}
       <article><a href="{{path}}">{{title}}</a></article>
-    {{/site.posts}}
+    {{/site.posts.all}}
     </section>
 
-    {{> _footer.inc.tmpl.html}}
+    {{> _footer.inc.html}}
   </body>
 </html>
