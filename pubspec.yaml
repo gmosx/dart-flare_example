@@ -1,10 +1,10 @@
 name: flare_example
-description: A site rendered using Flare.
+version: 0.2.0
+author: George Moschovitis <george.moschovitis@gmail.com>
+description: An example site rendered by Flare, a Dart-powered static-site generator.
 dev_dependencies:
   flare: any
   sass: any
-dependency_overrides:
-  barback: any
 transformers:
 - sass:
     executable: /home/gmosx/Code/sassc
@@ -19,4 +19,5 @@ transformers:
 - flare/partials_transformer
 - flare/metadata_aggregator
 - flare/mustache_transformer
+- flare/html_optimizer
 - flare/cleanup_transformer
