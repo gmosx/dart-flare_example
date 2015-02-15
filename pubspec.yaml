@@ -9,7 +9,7 @@ transformers:
 - sass:
     executable: /home/gmosx/Code/sassc
 - flare/metadata_extractor
-- flare/metadata_transformer
+- flare/metadata_translator
 - flare/markdown_transformer
 - flare/posts_indexer:
     root: web/posts

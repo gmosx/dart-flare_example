@@ -1,0 +1,2 @@
+1.9.0-dev.8.0
+flare/cleanup_transformer,flare/html_optimizer,flare/markdown_transformer,flare/metadata_aggregator,flare/metadata_extractor,flare/metadata_translator,flare/mustache_transformer,flare/partials_transformer,flare/posts_indexer,flare/posts_transformer,sass
