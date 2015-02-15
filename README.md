@@ -9,3 +9,11 @@ $ pub serve
 ```
 
 then browse http://localhost:8080
+
+Alternatively you can build the whole site for deployment:
+
+```
+$ pub build
+```
+
+renders the whole site into the build/ folder.
