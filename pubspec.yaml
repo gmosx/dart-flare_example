@@ -7,7 +7,7 @@ dev_dependencies:
   sass: any
 transformers:
 - sass:
-    executable: /home/gmosx/Code/sassc
+    executable: sassc
 - flare/metadata_extractor
 - flare/metadata_translator
 - flare/markdown_transformer
